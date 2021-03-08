@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------
+// button
+// * override bulma
+// ----------------------------------------------------------------
+
+.button {
+  &.is-icon-left-fix {
+    .icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      font-size: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}

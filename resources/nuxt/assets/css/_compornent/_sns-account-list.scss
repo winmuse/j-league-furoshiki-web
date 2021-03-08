@@ -1,0 +1,46 @@
+// ----------------------------------------------------------------
+// sns-account-list
+// ----------------------------------------------------------------
+
+.sns-account-list {
+  $parent: &;
+  background: $white;
+  border-radius: $radius;
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+
+    & + & {
+      border-top: 1px solid #f0f0f0;
+    }
+
+    &.is-disabled {
+      color: #999999;
+    }
+
+    &-name {
+      img {
+        width: 30px;
+        margin-right: 15px;
+      }
+    }
+
+    &-control {
+      width: 40px;
+      text-align: right;
+      margin-left: auto;
+    }
+  }
+
+  // modifier
+  &.is-small {
+    #{$parent} {
+      &-item {
+        padding: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// ----------------------------------------------------------------
+// close
+// ----------------------------------------------------------------
+$close-size: 40px;
+$close-icon-size: 1px;
+
+.close {
+  @include delete;
+  height: $close-size;
+  width: $close-size;
+  max-height: $close-size;
+  max-width: $close-size;
+  min-height: $close-size;
+  min-width: $close-size;
+
+  &::before {
+    height: $close-icon-size;
+  }
+
+  &::after {
+    width: $close-icon-size;
+  }
+}

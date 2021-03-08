@@ -1,0 +1,9 @@
+// ellipsis
+// -----------------------------------
+@mixin ellipsis($num: 1, $lineHeight: 1.3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+  max-height: calc(1em * (#{$num} * #{$lineHeight}));
+}

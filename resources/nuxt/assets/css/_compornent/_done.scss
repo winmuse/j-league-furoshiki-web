@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------
+// done
+// ----------------------------------------------------------------
+$done-size: 40px;
+$done-icon-size: 1px;
+
+.done {
+  line-height: 1.43;
+
+  &-figure {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &-done {
+      width: 96px;
+    }
+  }
+
+  &-text {
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &-button {
+    .button {
+      margin: 0 2px;
+    }
+  }
+}

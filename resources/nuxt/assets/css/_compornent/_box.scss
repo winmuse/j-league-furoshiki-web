@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------
+// box
+// * override bulma
+// ----------------------------------------------------------------
+.box {
+  &.is-border {
+    background-color: $input-background-color;
+    border: 1px solid $input-border-color;
+    border-radius: $input-radius;
+  }
+}

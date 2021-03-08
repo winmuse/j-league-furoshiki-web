@@ -1,0 +1,171 @@
+// Set your colors
+$black: #000;
+$black-bis: #121212;
+$black-ter: #232323;
+$grey-darker: #333333;
+$grey-dark: #494949;
+$grey: #999999;
+$grey-light: #b5b5b5;
+$grey-lighter: #644343;
+$grey-lightest: #ededed;
+$white-ter: #f3f3f3;
+$white-bis: #f9f9f9;
+$white-quater: #fbfbfb;
+$white-quin: #dddddd;
+$white: #ffffff;
+$primary: #ea1b23;
+$third: $primary;
+$twitter: #009ff2;
+$facebook: #0073f2;
+$instagram: #8c33cc;
+$line: #00bb02;
+
+$custom-colors: (
+  'twitter': (
+    $twitter
+  ),
+  'facebook': (
+    $facebook
+  ),
+  'instagram': (
+    $instagram
+  ),
+  'line': (
+    $line
+  )
+);
+$control-height: 48px;
+
+$tablet: 9999px;
+$desktop: 9999px;
+$widescreen: 9999px;
+$fullhd: 9999px;
+
+// Typography
+$family-sans-serif: 'Noto Sans JP', sans-serif;
+$family-primary: $family-sans-serif;
+$family-secondary: 'Kosugi', sans-serif;
+
+$size-normal: 14px;
+$size-medium: 16px;
+
+// body
+$body-family: $family-sans-serif;
+$body-size: 14px;
+$body-color: $black;
+$body-line-height: 1.75;
+$body-background-color: $white-ter;
+
+$link: $primary;
+$link-hover: $primary;
+
+$column-gap: 5px;
+
+$dimensions: 10, 15, 20, 30;
+
+// navbar
+$navbar-background-color: $black;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-color: $white;
+$navbar-burger-color: $white;
+
+// menu
+$menu-item-color: $primary;
+$menu-item-radius: 0;
+$menu-list-link-padding: 0.86em 38px;
+$menu-label-font-size: 0.5em;
+
+$breadcrumb-item-separator-color: $primary;
+
+//title
+$title-size: 16px;
+$title-color: $third;
+
+$button-color: $third;
+$button-background-color: $white;
+$button-border-color: $third;
+$button-hover-color: $primary;
+$button-hover-border-color: $primary;
+$button-padding-horizontal: 1.3em;
+
+// tab
+$tabs-border-bottom-color: transparent;
+$tabs-border-bottom-style: solid;
+$tabs-border-bottom-width: 3px;
+$tabs-link-color: #999999;
+$tabs-link-hover-border-bottom-color: $primary;
+$tabs-link-hover-color: $primary;
+$tabs-link-active-border-bottom-color: $link;
+$tabs-link-active-color: $link;
+$tabs-link-padding: 15px 1em;
+
+// $tabs-boxed-link-radius: $radius;
+// $tabs-boxed-link-hover-background-color: $background;
+// $tabs-boxed-link-hover-border-bottom-color: $border;
+
+// $tabs-boxed-link-active-background-color: $scheme-main;
+// $tabs-boxed-link-active-border-color: $border;
+// $tabs-boxed-link-active-border-bottom-color: transparent;
+
+//nav
+
+$navbar-background-color: $black;
+// $navbar-box-shadow-size: 0 2px 0 0;
+// $navbar-box-shadow-color: $background;
+$navbar-height: 3.25rem;
+$navbar-padding-vertical: 0rem;
+$navbar-padding-horizontal: 0rem;
+$navbar-z: 30;
+$navbar-fixed-z: 30;
+
+// label
+$label-weight: normal;
+
+// input
+$input-color: $grey-darker;
+$input-background-color: $white;
+$input-border-color: #d0d0d0;
+$input-height: $control-height;
+$input-shadow: none;
+$input-placeholder-color: #999999;
+$input-hover-color: $input-color;
+$input-hover-border-color: $input-border-color;
+$input-focus-color: $input-color;
+$input-focus-border-color: $input-border-color;
+$input-focus-box-shadow-size: none;
+$input-focus-box-shadow-color: transparent;
+$input-arrow: $black;
+$input-radius: 4px;
+$input-icon-color: $black;
+$input-icon-active-color: $black;
+
+$control-border-width: 1px;
+$control-height: 48px;
+$control-line-height: 1.5;
+
+$control-padding-vertical: calc(0.375em - #{$control-border-width});
+$control-padding-horizontal: calc(1em - #{$control-border-width});
+
+$radio-active-background-color: $input-border-color;
+$radio-size: 30px;
+
+$checkbox-active-background-color: $input-border-color;
+
+$taginput-height: $control-height - 7px;
+
+// box
+$box-color: $black;
+$box-background-color: $white;
+$box-radius: 4px;
+$box-shadow: none;
+$box-padding: 15px;
+
+// modal
+$modal-content-spacing-mobile: 50px;
+
+// header
+$header-height: 60px;
+
+// footer
+$footer-background-color: $primary;
+$footer-padding: 0;

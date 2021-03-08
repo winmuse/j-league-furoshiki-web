@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------
+// tools
+// * override bulma
+// ----------------------------------------------------------------
+// Containers
+.field {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.control.has-icons-left .icon,
+.control.has-icons-right .icon {
+  font-size: 21px;
+}

@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------
+// sns-error
+// ----------------------------------------------------------------
+.sns-error {
+  padding-top: 100px;
+  &_block_msg {
+      p {
+          text-align: center;
+          font-size: 1.2rem;
+      }
+  }
+  &_block_btn {
+      padding-top: 50px;
+
+      .button {
+        display: flex;
+      }
+  }
+}

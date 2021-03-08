@@ -1,0 +1,80 @@
+// ----------------------------------------------------------------
+// checkbox radio
+// * override bulma
+// ----------------------------------------------------------------
+$checkbox-active-background-color: $primary;
+$checkbox-background-color: transparent;
+$checkbox-border-color: #fff;
+$checkbox-border-width: 1px;
+$checkbox-checkmark-color: $primary;
+$checkbox-size: 30px;
+
+$checkbox-small-size: 20px;
+$checkbox-small-border-color: #d0d0d0;
+
+.b-checkbox {
+  &.checkbox {
+    & + .checkbox {
+      margin-left: 0.5em;
+    }
+
+    input[type='checkbox'] {
+      + .check {
+        width: $checkbox-size;
+        height: $checkbox-size;
+        flex-shrink: 0;
+        border-radius: 100%;
+        border: $checkbox-border-width solid $checkbox-border-color;
+        transition: none;
+      }
+
+      &:checked + .check {
+        border-color: $checkbox-active-background-color;
+        background-image: url(/images/checkbox.png);
+        background-color: $checkbox-active-background-color;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 16px;
+      }
+
+      &:focus {
+        + .check {
+          box-shadow: none;
+        }
+
+        &:checked + .check {
+          box-shadow: none;
+          background-color: $primary;
+        }
+      }
+    }
+
+    &:hover {
+      input[type='checkbox']:not(:disabled) + .check {
+        border-color: $input-border-color;
+      }
+    }
+
+    .control-label {
+      display: none;
+    }
+  }
+
+  &.is-small {
+    &.checkbox {
+      input[type='checkbox'] {
+        + .check {
+          width: $checkbox-small-size;
+          height: $checkbox-small-size;
+          border-color: $checkbox-small-border-color;
+        }
+
+        &:checked + .check {
+          background-image: url(/images/checkbox-small.png);
+          background-size: 12px;
+          border-color: $checkbox-active-background-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+// ----------------------------------------------------------------
+// shared
+// * override bulma
+// ----------------------------------------------------------------
+$shared-nega-color: #fff;
+$shared-nega-border: rgba(255, 255, 255, 0.7);
+$shared-nega-background: rgba(255, 255, 255, 0.3);
+
+%shared-common {
+  &.is-borderless {
+    border: none !important;
+  }
+
+  .is-borderless & {
+    border: none !important;
+  }
+}
+
+%shared-nega-common {
+  border: solid 1px $shared-nega-border;
+  background-color: $shared-nega-background;
+  color: $shared-nega-color;
+
+  & + .icon {
+    color: $shared-nega-color;
+  }
+
+  &:focus ~ .icon {
+    color: #ffffff !important;
+  }
+}
+
+.input,
+.textarea {
+  @extend %shared-common;
+
+  &.is-nega {
+    @extend %shared-nega-common;
+  }
+}
+
+.select {
+  @extend %shared-common;
+
+  &.is-nega {
+    select {
+      @extend %shared-nega-common;
+    }
+
+    &:not(.is-multiple):not(.is-loading)::after {
+      border-color: $shared-nega-color;
+    }
+  }
+}

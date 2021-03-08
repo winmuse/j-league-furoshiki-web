@@ -1,0 +1,22 @@
+// ----------------------------------------------------------------
+// icon play
+// ----------------------------------------------------------------
+.icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 100%;
+}

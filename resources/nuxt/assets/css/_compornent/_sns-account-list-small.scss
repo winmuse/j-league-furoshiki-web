@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------
+// sns-account-list-small
+// ----------------------------------------------------------------
+
+.sns-account-list-small {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    .icon {
+      margin-right: 3px !important;
+      margin-left: 0px !important;
+      font-size: 12px;
+      width: auto;
+    }
+
+    .delete {
+      background: transparent;
+    }
+  }
+}

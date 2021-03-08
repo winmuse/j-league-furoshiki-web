@@ -1,0 +1,28 @@
+// ----------------------------------------------------------------
+// container
+// * override bulma
+// ----------------------------------------------------------------
+.pg-container {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  //max-width: 100%;
+
+  &.is-padding {
+    padding: 15px 25px;
+  }
+
+  &.is-padding-top {
+    padding-top: 20px;
+  }
+
+  &.is-padding-top-only {
+    padding: 0;
+    padding-top: 20px;
+  }
+}

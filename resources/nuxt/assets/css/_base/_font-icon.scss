@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "icon-font";
+	src: url('../../static/fonts/icon-font/icon-font.eot');
+	src: url('../../static/fonts/icon-font/icon-font.eot?#iefix') format('eot'),
+		url('../../static/fonts/icon-font/icon-font.woff2') format('woff2'),
+		url('../../static/fonts/icon-font/icon-font.woff') format('woff'),
+		url('../../static/fonts/icon-font/icon-font.ttf') format('truetype');
+}
+
+@mixin icon-font-styles {
+	font-family: "icon-font";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon-font {
+	@include icon-font-styles;
+}
+
+@function icon-font-char($filename) {
+	$char: "";
+
+	@if $filename == arrow {
+		$char: \E001;
+	}
+	@if $filename == calender {
+		$char: \E002;
+	}
+	@if $filename == check {
+		$char: \E003;
+	}
+	@if $filename == facebook {
+		$char: \E004;
+	}
+	@if $filename == instagram {
+		$char: \E005;
+	}
+	@if $filename == line {
+		$char: \E006;
+	}
+	@if $filename == play {
+		$char: \E007;
+	}
+	@if $filename == plus {
+		$char: \E008;
+	}
+	@if $filename == search {
+		$char: \E009;
+	}
+	@if $filename == twitter {
+		$char: \E00A;
+	}
+
+	@return $char;
+}
+
+@mixin icon-font($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon-font;
+		} @else {
+			@include icon-font-styles;
+		}
+		content: unquote("\"") + icon-font-char($filename) + unquote("\"");
+	}
+}
+
+.icon-font-arrow {
+	@include icon-font(arrow);
+}
+.icon-font-calender {
+	@include icon-font(calender);
+}
+.icon-font-check {
+	@include icon-font(check);
+}
+.icon-font-facebook {
+	@include icon-font(facebook);
+}
+.icon-font-instagram {
+	@include icon-font(instagram);
+}
+.icon-font-line {
+	@include icon-font(line);
+}
+.icon-font-play {
+	@include icon-font(play);
+}
+.icon-font-plus {
+	@include icon-font(plus);
+}
+.icon-font-search {
+	@include icon-font(search);
+}
+.icon-font-twitter {
+	@include icon-font(twitter);
+}

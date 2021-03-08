@@ -1,0 +1,50 @@
+// ----------------------------------------------------------------
+// Slick theme
+// ----------------------------------------------------------------
+
+.slick-slide {
+  &,
+  * {
+    outline: none !important;
+  }
+}
+
+.slick-slider {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  .slick {
+    &-slide {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 5px;
+
+      > * {
+        height: 100%;
+
+        > * {
+          height: 100%;
+          display: flex;
+
+          > * {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &-track {
+      display: flex;
+    }
+
+    &-slide {
+      float: none;
+      height: auto;
+      display: flex;
+
+      & > * {
+        display: flex;
+      }
+    }
+  }
+}

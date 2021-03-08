@@ -1,0 +1,15 @@
+// ----------------------------------------------------------------
+// select
+// * override bulma
+// ----------------------------------------------------------------
+.select {
+  &:not(.is-multiple):not(.is-loading) {
+    &::after {
+      border-width: 1px;
+      border-radius: 0;
+      height: 12px;
+      width: 12px;
+      margin-top: -9px;
+    }
+  }
+}

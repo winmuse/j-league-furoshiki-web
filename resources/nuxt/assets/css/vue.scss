@@ -1,0 +1,15 @@
+// ----------------------------------------------------------------
+// vue
+// ----------------------------------------------------------------
+.v-fade-enter-active,
+.v-fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.v-fade-enter,
+.v-fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+ {
+  opacity: 0;
+}

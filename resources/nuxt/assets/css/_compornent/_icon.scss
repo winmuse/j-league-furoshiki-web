@@ -1,0 +1,17 @@
+// ----------------------------------------------------------------
+// icon
+// * override bulma
+// ----------------------------------------------------------------
+.icon {
+  line-height: 1;
+  vertical-align: middle;
+  margin-top: 1px;
+
+  &.is-mirror {
+    transform: rotate(180deg);
+  }
+
+  [class*='icon-item-'] {
+    display: inline-flex;
+  }
+}

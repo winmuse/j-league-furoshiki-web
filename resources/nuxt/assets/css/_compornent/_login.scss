@@ -1,0 +1,44 @@
+// ----------------------------------------------------------------
+// login
+// ----------------------------------------------------------------
+.login {
+  //background: url(/images/login-bg.jpg) no-repeat center center;
+  //background-size: auto 100%;
+  background: #777;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #eee;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #eee;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #eee;
+  }
+
+  &-inner {
+    width: 100%;
+  }
+
+  &-sitelogo {
+    text-align: center;
+    margin-bottom: 50px;
+
+    img {
+      width: 250px;
+      //height: 66px;
+    }
+  }
+}

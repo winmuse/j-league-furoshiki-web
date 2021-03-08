@@ -1,0 +1,34 @@
+// ----------------------------------------------------------------
+// delete
+// * override bulma
+// ----------------------------------------------------------------
+$delete-icon-size: 1px;
+$delete-small-size: 20px;
+
+.delete {
+  &::before {
+    height: $delete-icon-size;
+  }
+
+  &::after {
+    width: $delete-icon-size;
+  }
+
+  &.is-small {
+    height: $delete-small-size;
+    max-height: $delete-small-size;
+    max-width: $delete-small-size;
+    min-height: $delete-small-size;
+    min-width: $delete-small-size;
+    width: $delete-small-size;
+  }
+
+  &.is-outline {
+    border: solid 1px #d0d0d0;
+    background-color: transparent;
+    &::before,
+    &::after {
+      background-color: #d0d0d0;
+    }
+  }
+}

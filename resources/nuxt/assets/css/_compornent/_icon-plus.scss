@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------
+// icon plus
+// ----------------------------------------------------------------
+.icon-plus {
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  background-color: $primary;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 9px;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff !important;
+  }
+}
